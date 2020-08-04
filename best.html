@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Seller</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="link_">
+        <img class="logo" src="images/lotus_n.jpg" height="55px" width="35px" />
+        <img class="name" src="images/logo_n.jpg" height="65px" width="160px" />
+      </a>
+
+      <div class="menu-bar">
+        <ul>
+          <li>
+            <img src="images/menu.png" id="menu-icon" onclick="show_menu()" />
+          </li>
+          <li>
+            <a href="#"> <i class="fa fa-shopping-cart"></i>Cart</a>
+          </li>
+          <li>
+            <a href="form.html">Sign up</a>
+          </li>
+          <li>
+            <a href="form.html">Sign in</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bar">
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" id="menu_1">Home</a></li>
+            <li><a href="promo.html" id="menu_2">Promotion</a></li>
+            <li>
+              <a href="best.html" id="menu_3">Best Seller</a>
+            </li>
+            <li>
+              <a href="herbal.html" id="menu_4">Herbal Tea</a>
+            </li>
+            <li>
+              <a href="green.html" id="menu_5">Green Tea</a>
+            </li>
+            <li>
+              <a href="black.html" id="menu_6">Black Tea</a>
+            </li>
+            <li>
+              <a href="service.html" id="menu_7">Service</a>
+              <ul>
+                <li><a href="service.html" id="menu_71">Shipping</a></li>
+                <li><a href="service.html" id="menu_72">Return Policy</a></li>
+                <li><a href="service.html" id="menu_73">FAQ </a></li>
+              </ul>
+            </li>
+            <li><a href="form.html" id="menu_8">Account</a></li>
+            <li>
+              <div class="search-container">
+                <input
+                  type="text"
+                  placeholder="Type to search"
+                  name="search"
+                  class="form-control"
+                />
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="clear"></div>
+
+      <div class="small-container">
+        <div class="row row2" >
+          <h4 class="title_page">Best Seller</h4>
+          <select>
+            <option>Default sorting</option>
+            <option>Default by price</option>
+            <option>Default by sale</option>
+            <option>Default by rating</option>
+            <option>Default by population</option>
+          </select>
+        </div>
+       
+        <div class="row">
+          <div class="col4">
+            <img src="images/green-thai-tea.jpg" width="90px" height="290px" />
+            <h4>Thai tea - green</h4>
+            <p>$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/red-thai-tea.jpg" width="90px" height="290px" />
+            <h4>Thai tea - red</h4>
+            <p>$40.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_Japanese_Sencha.PNG" width="90px" height="290px" />
+            <h4>Japanese Sencha</h4>
+            <p>$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Choco_Chaga.PNG" width="90px" height="290px" />
+            <h4>Choco Chaga</h4>
+            <p>$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Cherry_Berry.PNG" width="90px" height="290px" />
+            <h4>Cherry Berry</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_PhucLong.PNG" width="90px" height="290px" />
+            <h4>Phuc Long Tea</h4>
+            <p>$38.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal2.jpg" width="90px" height="290px" />
+            <h4>Herbal Tea</h4>
+            <p>$30.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal3.jpg" width="90px" height="290px" />
+            <h4>Herbal Tea</h4>
+            <p>$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="page-btn">
+          <span>1</span>
+          <span>2</span>
+          <span>&#8594</span>
+       
+        </div>
+      </div>
+
+      <div class="offer">
+        <div class="small-container">
+          <div class="row">
+            <div class="col2">
+              <img
+                src="images/hoa-cuc-kho.jpg"
+                alt=""
+                class="offer-img"
+                width="200px"
+                height="290px"
+              />
+            </div>
+            <div class="col2">
+              <p>Exclusively Available on N & Tea</p>
+              <h1>Extremely good Tea</h1>
+              <small
+                >Bring yourself to a relaxing sleep with our special blend of Chrysanthemum
+                tea.</small
+              >
+              <br />
+              <a href="herbal.html" class="btn">Buy now &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="small-container">
+          <div class="row">
+            <div class="col3">
+              <img src="images/ly-herbal.jpg" width="140px" height="220px" />
+              <button type="button" class="btn-buy">Buy now</button>
+              <div class="overlay"></div>
+            </div>
+            <div class="col3">
+              <img src="images/ly-tra-cuc.jpg" width="140px" height="220px" />
+              <button type="button" class="btn-buy">Buy now</button>
+              <div class="overlay"></div>
+            </div>
+            <div class="col3">
+              <img src="images/ly-tra-herbal.jpg" width="140px" height="220px" />
+              <button type="button" class="btn-buy">Buy now</button>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-tea">
+        <div class="small-container">
+          <div class="row">
+            <div class="col5">
+              <img src="images/visa.jpg" width="190px" height="110px" />
+            </div>
+            <div class="col5">
+              <img src="images/master.png" width="150px" height="110px" />
+            </div>
+            <div class="col5">
+              <img src="images/paypal.png" width="150px" height="90px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <section>
+          <aside>
+            <p><b>COMPANY</b></p>
+            <p class="add"><a href="service.html" class="link_">About us</a></p>
+            <p class="add"><a href="service.html" class="link_">Location & hour</a></p>
+            <p class="add"><a href="service.html" class="link_">Careers</a></p>
+          </aside>
+
+          <aside>
+            <p><b>CUSTOMER SERVICE</b></p>
+            <p class="add"><a href="service.html" class="link_">Shipping</a></p>
+            <p class="add"><a href="service.html" class="link_">Return Policy</a></p>
+            <p class="add"><a href="service.html" class="link_">FAQ</a></p>
+          </aside>
+
+          <aside class="space">
+            <p><b>SHOP</b></p>
+            <p class="add"><a href="promo.html" class="link_">Promotion</a></p>
+            <p class="add"><a href="best.html" class="link_">Best Seller</a></p>
+            <p class="add"><a href="black.html" class="link_">Black Tea</a></p>
+            <p class="add"><a href="green.html" class="link_"> Green Tea</a></p>
+            <p class="add"><a href="herbal.html" class="link_">Herbal Tea</a></p>
+          </aside>
+
+          <aside>
+            <p><b>CONTACT US</b></p>
+
+            <p class="add">
+              <i class="fa fa-phone" id="icon1"></i>
+              <a href="tel:416-254-6770" class="link_">416-254-6770</a>
+            </p>
+            <p class="add">
+              <a href="tel:647-988-5000" class="link_">647-988-5000</a>
+            </p>
+            <p class="add">
+              <i class="fa fa-envelope" id="icon3"></i>
+              <a href="mailto:ntea@gmail.com" class="link_">ntea@gmail.com</a>
+            </p>
+            <p class="add">
+              <a href="mailto:n_tea@ntea.com" class="link_">n_tea@ntea.com</a>
+            </p>
+            <p class="social_media">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              &nbsp;
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              &nbsp;
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              &nbsp;
+              <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </p>
+          </aside>
+        </section>
+        <section class="format_foot">
+          <p id="foot_"></p>
+        </section>
+      </footer>
+    </div>
+    <br />
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+      MenuItems.style.maxHeight = '0px';
+      function show_menu() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '1000px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,7 +1,986 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Lobster+Two:ital@1&family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="link_">
+        <img class="logo" src="images/lotus_n.jpg" height="55px" width="35px" />
+        <img class="name" src="images/logo_n.jpg" height="65px" width="160px" />
+      </a>
+
+      <div class="menu-bar">
+        <ul>
+          <li>
+            <img src="images/menu.png" id="menu-icon" onclick="show_menu()" />
+          </li>
+          <li>
+            <a href="#"> <i class="fa fa-shopping-cart"></i>Cart</a>
+          </li>
+          <li>
+            <a href="form.html">Sign up</a>
+          </li>
+          <li>
+            <a href="form.html">Sign in</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bar">
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html" id="menu_1">Home</a></li>
+            <li><a href="promo.html" id="menu_2">Promotion</a></li>
+            <li>
+              <a href="best.html" id="menu_3">Best Seller</a>
+            </li>
+            <li>
+              <a href="herbal.html" id="menu_4">Herbal Tea</a>
+            </li>
+            <li>
+              <a href="green.html" id="menu_5">Green Tea</a>
+            </li>
+            <li>
+              <a href="black.html" id="menu_6">Black Tea</a>
+            </li>
+            <li>
+              <a href="service.html" id="menu_7">Service</a>
+              <ul>
+                <li><a href="service.html" id="menu_71">Shipping</a></li>
+                <li><a href="service.html" id="menu_72">Return Policy</a></li>
+                <li><a href="service.html" id="menu_73">FAQ </a></li>
+              </ul>
+            </li>
+            <li><a href="form.html" id="menu_8">Account</a></li>
+            <li>
+              <div class="search-container">
+                <input
+                  type="text"
+                  placeholder="Type to search"
+                  name="search"
+                  class="form-control"
+                />
+                <span class="input-group-text"><i class="fa fa-search"></i></span>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="clear"></div>
+
+      <div class="offer">
+        <div class="small-container">
+          <div class="row">
+            <div class="col2">
+              <img
+                src="images/hoa-cuc-kho.jpg"
+                alt=""
+                class="offer-img"
+                width="200px"
+                height="290px"
+              />
+            </div>
+            <div class="col2">
+              <p>Exclusively Available on N & Tea</p>
+              <h1>Extremely good Tea</h1>
+              <small
+                >Bring yourself to a relaxing sleep with our special blend of Chrysanthemum
+                tea.</small
+              >
+              <br />
+              <a href="herbal.html" class="btn">Buy now &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-container">
+        <h3 class="title">PROMOTION</h3>
+        <div class="row">
+          <div class="col4">
+            <img src="images/cuc-tui-loc.jpg" width="90px" height="290px" />
+            <h4>Chrysanthemum Tea</h4>
+            <p class="old">$20.00</p>
+            <p class="new">$18.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/ginger.jpg" width="90px" height="290px" />
+            <h4>Ginger Tea</h4>
+            <p class="old">$30.00</p>
+            <p class="new">$20.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/hoa-cuc-can.jpg" width="90px" height="290px" />
+            <h4>Chrysanthemum Tea</h4>
+            <p class="old">$35.00</p>
+            <p class="new">$33.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/hoa-cuc-lon.jpg" width="90px" height="290px" />
+            <h4>Chrysanthemum Tea</h4>
+            <p class="old">$40.00</p>
+            <p class="new">$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal5.jpg" width="90px" height="290px" />
+            <h4>Be One</h4>
+            <p class="old">$22.00</p>
+            <p class="new">$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal6.jpg" width="90px" height="290px" />
+            <h4>Herbal Tea</h4>
+            <p class="old">$33.00</p>
+            <p class="new">$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal7.jpg" width="90px" height="290px" />
+            <h4>Khubad Sai</h4>
+            <p class="old">$35.00</p>
+            <p class="new">$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal8.jpg" width="90px" height="290px" />
+            <h4>Restful Sleep</h4>
+            <p class="old">$40.00</p>
+            <p class="new">$38.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+        </div>
+
+        <h3 class="title">BEST SELLER</h3>
+        <div class="row">
+          <div class="col4">
+            <img src="images/green-thai-tea.jpg" width="90px" height="290px" />
+            <h4>Thai tea - green</h4>
+            <p>$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/red-thai-tea.jpg" width="90px" height="290px" />
+            <h4>Thai tea - red</h4>
+            <p>$40.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_Japanese_Sencha.PNG" width="90px" height="290px" />
+            <h4>Japanese Sencha</h4>
+            <p>$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Choco_Chaga.PNG" width="90px" height="290px" />
+            <h4>Choco Chaga</h4>
+            <p>$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Cherry_Berry.PNG" width="90px" height="290px" />
+            <h4>Cherry Berry</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_PhucLong.PNG" width="90px" height="290px" />
+            <h4>Phuc Long Tea</h4>
+            <p>$38.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal2.jpg" width="90px" height="290px" />
+            <h4>Herbal Tea</h4>
+            <p>$30.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal3.jpg" width="90px" height="290px" />
+            <h4>Herbal Tea</h4>
+            <p>$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+        </div>
+
+        <h3 class="title">HERBAL TEA</h3>
+        <p>
+          Mood-boosting, sleep aid, alertness-focus or even cold relief…you name it! We offer a wide
+          variety of herbal drink that would help you to achieve your desire state of mind. Not only
+          that, our blend of natural-ingredients is designed to be the best tasting drink you ever
+          try.
+        </p>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col4">
+            <img src="images/herbal1.jpg" width="90px" height="290px" />
+            <h4>Verveine</h4>
+            <p>$20.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal2.jpg" width="90px" height="290px" />
+            <h4>Booster</h4>
+            <p>$30.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal3.jpg" width="90px" height="290px" />
+            <h4>Herbal Tea</h4>
+            <p>$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal4.jpg" width="90px" height="290px" />
+            <h4>Hypertension</h4>
+            <p>$40.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal5.jpg" width="90px" height="290px" />
+            <h4>Be One</h4>
+            <p>$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal6.jpg" width="90px" height="290px" />
+            <h4>Herbal Tea</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal7.jpg" width="90px" height="290px" />
+            <h4>Khubad Sai</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/herbal8.jpg" width="90px" height="290px" />
+            <h4>Restful Sleep</h4>
+            <p>$38.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/turkey-tea.jpg" width="190px" height="290px" />
+            <h4>Peppermint and Lemon</h4>
+            <p>$48.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/ginger.jpg" width="90px" height="290px" />
+            <h4>Ginger</h4>
+            <p>$48.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/puka.jpg" width="90px" height="290px" />
+            <h4>Puka</h4>
+            <p>$48.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/hoa-cuc-kho.jpg" width="90px" height="290px" />
+            <h4>Chrysanthemum</h4>
+            <p>$57.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+        </div>
+
+        <h3 class="title">GREEN TEA</h3>
+        <p>
+          Green tea is simply the tea leaf without undergoing any processing or oxidizing process.
+          It is a very popular drink in China and is known for many of its health benefits. The
+          green color of the leaf is retained when putting into water. The level of caffein in green
+          tea is also lower than black tea, making it suitable for use in many occasions.
+        </p>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col4">
+            <img src="images/green1.jpg" width="90px" height="290px" />
+            <h4>Pure</h4>
+            <p>$20.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/Green2.jpg" width="90px" height="290px" />
+            <h4>Ngoc Duy</h4>
+            <p>$30.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/green-thai-tea.jpg" width="90px" height="290px" />
+            <h4>Thai Tea - green</h4>
+            <p>$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/red-thai-tea.jpg" width="90px" height="290px" />
+            <h4>Thai Tea - red</h4>
+            <p>$40.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_Japanese_Sencha.PNG" width="90px" height="290px" />
+            <h4>Japanese Sencha</h4>
+            <p>$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_SpearMint.PNG" width="90px" height="290px" />
+            <h4>SpearMint</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_KirkLand.PNG" width="90px" height="290px" />
+            <h4>KirkLand</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/GreenTea_PhucLong.PNG" width="90px" height="290px" />
+            <h4>Phuc Long</h4>
+            <p>$38.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+        </div>
+
+        <h3 class="title">BLACK TEA</h3>
+        <p>
+          Black tea is made by oxidizing and drying out green tea. The process changed the color of
+          the tea leaf from green to black. When putting it in water, the tea leaf will make the tea
+          become black or dark red hence the name of black tea. It has the strongest flavor and
+          caffein proportion among all teas. Besides being a favorite drink, it could be used in
+          many other recipes such as cakes, bubble milk tea…It is best used in the morning or at
+          noon due to its energizing nature.
+        </p>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col4">
+            <img src="images/black-tea-1.jpg" width="90px" height="290px" />
+            <h4>Handpicked</h4>
+            <p>$20.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Ahmad.PNG" width="90px" height="290px" />
+            <h4>English Breakfast</h4>
+            <p>$30.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_HoangGia.PNG" width="90px" height="290px" />
+            <h4>Hoang Gia</h4>
+            <p>$35.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Dilmah.PNG" width="90px" height="290px" />
+            <h4>Dilmah</h4>
+            <p>$40.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Choco_Chaga.PNG" width="90px" height="290px" />
+            <h4>Choco Chaga</h4>
+            <p>$19.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Cherry_Berry.PNG" width="90px" height="290px" />
+            <h4>Cherry Berry</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Japanese.PNG" width="90px" height="290px" />
+            <h4>Japanese Tea</h4>
+            <p>$28.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+          <div class="col4">
+            <img src="images/BlackTea_Curtis.PNG" width="90px" height="290px" />
+            <h4>Curtis</h4>
+            <p>$38.00</p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <a href="" class="btn-cart">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="offer">
+        <div class="small-container">
+          <div class="row">
+            <div class="col2">
+              <img
+                src="images/turkey-tea.jpg"
+                alt=""
+                class="offer-img"
+                width="350px"
+                height="250px"
+              />
+            </div>
+            <div class="col2">
+              <p>Exclusively Available on N & Tea</p>
+              <h1>Peppermint and Lemon Tea</h1>
+              <small>Bring yourself to a relaxing life.</small>
+              <br />
+              <a href="herbal.html" class="btn">Buy now &#8594;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categories">
+        <div class="small-container">
+          <div class="row">
+            <div class="col3">
+              <img src="images/ly-herbal.jpg" width="140px" height="220px" />
+              <button type="button" class="btn-buy">Buy now</button>
+              <div class="overlay"></div>
+            </div>
+            <div class="col3">
+              <img src="images/ly-tra-cuc.jpg" width="140px" height="220px" />
+              <button type="button" class="btn-buy">Buy now</button>
+              <div class="overlay"></div>
+            </div>
+            <div class="col3">
+              <img src="images/ly-tra-herbal.jpg" width="140px" height="220px" />
+              <button type="button" class="btn-buy">Buy now</button>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="brand-tea">
+        <div class="small-container">
+          <div class="row">
+            <div class="col5">
+              <img src="images/visa.jpg" width="190px" height="110px" />
+            </div>
+            <div class="col5">
+              <img src="images/master.png" width="150px" height="110px" />
+            </div>
+            <div class="col5">
+              <img src="images/paypal.png" width="150px" height="90px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <section>
+          <aside>
+            <p><b>COMPANY</b></p>
+            <p class="add"><a href="service.html" class="link_">About us</a></p>
+            <p class="add"><a href="service.html" class="link_">Location & hour</a></p>
+            <p class="add"><a href="service.html" class="link_">Careers</a></p>
+          </aside>
+
+          <aside>
+            <p><b>CUSTOMER SERVICE</b></p>
+            <p class="add"><a href="service.html" class="link_">Shipping</a></p>
+            <p class="add"><a href="service.html" class="link_">Return Policy</a></p>
+            <p class="add"><a href="service.html" class="link_">FAQ</a></p>
+          </aside>
+
+          <aside class="space">
+            <p><b>SHOP</b></p>
+            <p class="add"><a href="promo.html" class="link_">Promotion</a></p>
+            <p class="add"><a href="best.html" class="link_">Best Seller</a></p>
+            <p class="add"><a href="black.html" class="link_">Black Tea</a></p>
+            <p class="add"><a href="green.html" class="link_"> Green Tea</a></p>
+            <p class="add"><a href="herbal.html" class="link_">Herbal Tea</a></p>
+          </aside>
+
+          <aside>
+            <p><b>CONTACT US</b></p>
+
+            <p class="add">
+              <i class="fa fa-phone" id="icon1"></i>
+              <a href="tel:416-254-6770" class="link_">416-254-6770</a>
+            </p>
+            <p class="add">
+              <a href="tel:647-988-5000" class="link_">647-988-5000</a>
+            </p>
+            <p class="add">
+              <i class="fa fa-envelope" id="icon3"></i>
+              <a href="mailto:ntea@gmail.com" class="link_">ntea@gmail.com</a>
+            </p>
+            <p class="add">
+              <a href="mailto:n_tea@ntea.com" class="link_">n_tea@ntea.com</a>
+            </p>
+            <p class="social_media">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              &nbsp;
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              &nbsp;
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              &nbsp;
+              <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+            </p>
+          </aside>
+        </section>
+        <section class="format_foot">
+          <p id="foot_"></p>
+        </section>
+      </footer>
+    </div>
+    <br />
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+      MenuItems.style.maxHeight = '0px';
+      function show_menu() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '1000px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+  </body>
 </html>
+<!--
+      Introduction
+      ------------
+
+      You are asked to create an online store in HTML, CSS, and JavaScript.
+      Please implement a store with all of the following requirements.
+
+      You may remove this comment and place all your HTML in this file.
+
+      Requirements:
+
+      1. Include a header across the top with your store's name, a logo,
+      and use a different background colour, web font, etc. Your header should
+      include info about what the store is, what it sells, etc.  Use some images
+      to try and draw the user in. NOTE: place all your site's images in the
+      `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture of the item
+        - the item's name or title
+        - a complete description of the item
+        - a category (i.e., each item must belong to one or more categories)
+        - a price in Canadian Dollars
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A category menu or "sidebar" (left, right, or top depending on your design)
+      showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the store items, a footer with the name of the store, any relevant
+      links you need to give users.  Include links and icons to any social media
+      for your store (Facebook, Twitter, etc). NOTE: you don't have to create such
+      accounts, but you can provide links to imaginary accounts.
+
+      5. Use at least two different Web Fonts for your store.  The titles should
+      be different from any regular text.  Use a free font service like
+      https://fonts.google.com/ or any other that you choose.  You can also
+      experiment with different font sizes and colours to draw attention toward
+      or away from various parts of your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Your images shouldn't be larger than 1M in size.  Users don't want to
+      download 10s or 100s of megabytes of data, especially on mobile.  You can use an
+      online tool like https://squoosh.app/ to help you reduce images.  You will
+      lose marks if your images aren't optimized for the web.
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your code is properly indented and commented, and that you've used
+      good naming practices for variables, functions, ids, classes, etc.
+
+      12. Have fun!  Build something you'd be proud to show future employers in
+      interviews.  Take the time to properly design and implement a beautiful and
+      functional storefront.  Maybe it will inspire you to start your own online business?
+    -->
