@@ -93,7 +93,7 @@ function validate_phone() {
       flag = true,
       myArray = str.split('-');
     for (i = 0; i < 3; i++) {
-      if (parseInt(myArray[i]) !== myArray[i]) {
+      if (parseInt(myArray[i]) != myArray[i]) {
         flag = false;
         break;
       }
