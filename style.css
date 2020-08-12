@@ -1,6 +1,13 @@
-/* Add any CSS you need to this file. */
+/* 
+Student Name: Thi Thanh Nguyen Nguyen
+Student ID  : 144128188
+Course      : WEB222NEE
+Assignment  : Final
+ */
+
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
+/****************** General setting for the whole page ******************/
 * {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
     sans-serif;
@@ -8,6 +15,7 @@
   box-sizing: border-box;
 }
 
+/****************** Format header ******************/
 .logo {
   -webkit-transform: rotate(25deg);
   -moz-transform: rotate(25deg);
@@ -22,64 +30,64 @@
   margin-top: 10px;
   margin-bottom: 5px;
 }
+nav {
+  background-color: none;
+  flex: 1;
+  width: 1100px;
+}
+.link_ {
+  color: white;
+  text-decoration: none;
+  font-size: small;
+}
+.link_:hover {
+  color: white;
+  text-decoration: none;
+  text-emphasis: none;
+}
+
+/****************** Format menu bar ******************/
+.menu-bar ul {
+  display: inline-flex;
+  float: right;
+}
+.menu-bar ul li {
+  border-left: 1px solid #ffffff;
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.menu-bar ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  text-decoration: none;
+}
+.fa-shopping-cart {
+  margin-right: 5px;
+}
+
+/****************** Format for displaying images ******************/
+#group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .row2 {
   justify-content: space-between;
   margin: 100px 0;
 }
-select {
-  border: 1px solid green;
-  border-radius: 4%;
-  padding: 5px;
-}
-select:focus {
-  outline: none;
-}
-#icon1,
-#icon3 {
-  float: left;
-  width: 20%;
-  padding: 18px;
-  padding-left: 0%;
-  padding-right: 0%;
-  color: white;
-  font-size: 12px;
-  cursor: pointer;
-}
-.social_media .fa {
-  font-size: 18px;
-  cursor: pointer;
-}
-#menu-icon {
-  width: 28px;
-  margin-left: 20px;
-  display: none;
-}
-.col2 small {
-  color: #555;
-  font-size: 12pt;
-}
-.col2 .btn {
-  display: inline-block;
-  background: orangered;
-  color: #ffffff;
-  padding: 8px 30px;
-  margin: 30px 0;
-  border-radius: 30px;
-}
-.col4 .btn-cart {
-  display: inline-block;
-  background: orangered;
-  color: #ffffff;
-  padding: 8px 30px;
-  margin: 30px 0;
-  border-radius: 30px;
-}
+
+/* Format navigation bar */
 nav {
   background-color: none;
   flex: 1;
@@ -95,65 +103,7 @@ nav {
   width: 100%;
   margin: auto;
 }
-.search-container {
-  display: inline-flex;
-  padding: 2px;
-  margin-left: 0px;
-  font-size: 12px;
-  width: 170%;
-}
-.search-container input {
-  float: right;
-}
-.search-container span {
-  float: right;
-}
 
-.form-control {
-  margin-top: 5px !important;
-  margin-left: 5px !important;
-  border: 1px solid rgb(131, 189, 33) !important;
-  border-top-left-radius: 20px !important;
-  border-bottom-right-radius: 0 !important;
-  border-bottom-left-radius: 20px !important;
-  border-top-right-radius: 0 !important;
-  box-shadow: none !important;
-}
-.input-group-text {
-  margin-top: 5px;
-  background: rgb(131, 189, 33) !important;
-  border: 1px solid rgb(131, 189, 33) !important;
-  border-top-left-radius: 0px !important;
-  border-bottom-right-radius: 20px !important;
-  border-bottom-left-radius: 0px !important;
-  border-top-right-radius: 20px !important;
-  cursor: pointer;
-}
-
-.search-container::after {
-  content: '';
-  clear: both;
-  display: table;
-}
-.search-container input[type='text'] {
-  padding: 6px;
-  font-size: 12px;
-  border: 1px solid white;
-  float: left;
-  width: 80%;
-  background: white;
-}
-
-.link_ {
-  color: white;
-  text-decoration: none;
-  font-size: small;
-}
-.link_:hover {
-  color: white;
-  text-decoration: none;
-  text-emphasis: none;
-}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -163,13 +113,26 @@ nav ul {
 nav ul li {
   float: left;
 }
+.add,
+.add a {
+  font-size: 10pt;
+  width: 100pt;
+  line-height: 1.2em;
+}
 
+aside {
+  float: left;
+  padding-left: 3em;
+  padding-top: 1.5em;
+  padding-right: 3em;
+  padding-bottom: 1.2em;
+}
 nav a:link,
 nav a:visited {
   display: block;
   color: black;
   font-weight: bold;
-  background-color: pink;
+  background-color: #fdb6d1;
   text-align: left;
   padding: 10px 14px;
   text-decoration: none;
@@ -205,20 +168,189 @@ nav a:hover {
 .clear {
   clear: both;
 }
+
+/****************** Format search bar ******************/
 .fa-search {
   color: white;
 }
+.search-container {
+  display: inline-flex;
+  padding: 2px;
+  margin-left: 10px;
+  font-size: 12px;
+  width: 290%;
+}
+.search-container input {
+  float: right;
+}
+.search-container span {
+  float: right;
+}
 
+.search-container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.search-container input[type='text'] {
+  padding: 6px;
+  font-size: 12px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: white;
+}
+
+/****************** Format subscribe form ******************/
+#subscribe {
+  position: absolute;
+  font-weight: bold;
+  margin-left: 150px;
+  text-align: left;
+  font-style: italic;
+  width: 100%;
+}
+
+#subscribe input[type='email'] {
+  margin-left: 20px;
+  width: 20%;
+}
+
+/****************** Format form ******************/
+select {
+  border: 1px solid green;
+  border-radius: 4%;
+  padding: 5px;
+}
+select:focus {
+  outline: none;
+}
+#highlight {
+  color: red;
+  font-weight: bolder;
+  margin-left: -10px;
+}
+.form-control {
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+  border: 1px solid rgb(131, 189, 33) !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-right-radius: 0 !important;
+  box-shadow: none !important;
+}
+.input-group-text {
+  margin-top: 5px;
+  background: rgb(131, 189, 33) !important;
+  border: 1px solid rgb(131, 189, 33) !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 20px !important;
+  cursor: pointer;
+}
+
+.show_box {
+  position: relative;
+  transform: scale(1);
+}
+#format_box {
+  width: 28em;
+  height: 12em;
+}
+textarea {
+  position: absolute;
+  transform: scale(0);
+}
+.form {
+  margin: 0 auto;
+  padding: 1.5em;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+.form input {
+  padding: 10px;
+  font-size: inherit;
+}
+
+.form input[type='text'],
+.form input[type='password'],
+.form input[type='email'],
+.form input[type='tel'] {
+  display: inline-block;
+  margin-bottom: 35px;
+  margin-left: 5%;
+  width: 70%;
+  border: 1px solid darkgreen;
+}
+.form input[type='radio'] {
+  margin: 0 7px 2px 1px;
+}
+.form input[type='radio']:first-child {
+  margin-left: 1em;
+  font-size: 15pt;
+}
+
+.form button[type='submit'],
+.form button[type='reset'] {
+  width: 90px;
+  height: 40px;
+  margin: 0.2em;
+  margin-left: 20%;
+  font-weight: bold;
+}
+.form input:focus,
+.form button:focus {
+  background-color: papayawhip;
+}
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 95px;
+  text-align: left;
+}
+#special {
+  display: inline;
+}
+
+/***************** Format footer ******************/
+#icon1,
+#icon3 {
+  float: left;
+  width: 20%;
+  padding: 18px;
+  padding-left: 0%;
+  padding-right: 0%;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+.social_media .fa {
+  font-size: 18px;
+  cursor: pointer;
+}
+#menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+.col2 small {
+  color: #555;
+  font-size: 12pt;
+}
 #foot_ {
   font-size: smaller;
   position: absolute;
   font-weight: bold;
   text-align: left;
+  padding-top: 0.7em;
   width: 100%;
 }
 footer section {
   background-color: rgba(0, 0, 0, 0.829);
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 2em;
   text-align: left;
   color: white;
@@ -229,32 +361,41 @@ footer section.format_foot {
   border-top: 1pt solid green;
   height: 3em;
 }
+
+/****************** Format button ******************/
+.col2 .btn {
+  display: inline-block;
+  background: orangered;
+  color: #ffffff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+.col4 .btn-cart {
+  display: inline-block;
+  background: orangered;
+  color: #ffffff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+/****************** Format service html file ******************/
 .service {
   margin: 30px 0;
   font-size: 30pt;
   font-family: 'Dancing Script', cursive;
   color: green;
 }
-.add,
-.add a {
-  font-size: 10pt;
-  width: 100pt;
-  line-height: 1.2em;
-}
 
-aside {
-  float: left;
-  padding-left: 3em;
-  padding-top: 1.5em;
-  padding-right: 3em;
-  padding-bottom: 1.2em;
-}
 .col2 h1 {
   color: green;
   text-align: left;
   font-size: 40pt;
   font-family: 'Dancing Script', cursive;
 }
+
+/****************** Format text ******************/
 h1 {
   color: green;
   text-align: center;
@@ -270,59 +411,33 @@ h4 {
   font-size: 12pt;
   font-style: italic;
 }
-
+h6 {
+  display: none;
+}
 .note {
   color: red;
   text-align: center;
   font-size: 10pt;
   font-style: italic;
 }
-.form {
-  margin: 0 auto;
-  width: 400px;
-  padding: 1em;
-  width: 420px;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+
+.col4 h4 {
+  display: block;
+  margin-top: 15px;
+  margin-left: 20px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: bold;
+  color: black;
+  font-style: normal;
 }
-.form input {
-  padding: 10px;
-  font-size: inherit;
+.col4 p {
+  font-size: 14px;
+  margin-left: 20px;
 }
 
-.form input[type='text'],
-.form input[type='password'],
-.form input[type='email'],
-.form input[type='tel'] {
-  display: block;
-  margin-bottom: 35px;
-  margin-left: 2%;
-  width: 90%;
-  border: 2px solid pink;
-}
-.form input[type='radio'] {
-  margin: 0 10px 2px 2px;
-}
-.form input[type='radio']:first-child {
-  margin-left: 3em;
-  font-size: 15pt;
-}
-.form button[type='submit'],
-.form button[type='reset'] {
-  width: 90px;
-  height: 40px;
-  margin: 0.2em;
-  margin-left: 6%;
-  font-weight: bold;
-}
-.form input:focus,
-.form button:focus {
-  background-color: rgb(131, 189, 33);
-}
-label {
-  display: inline-block;
-  width: 120px;
-}
+/****************** Format banner ******************/
 .banner_img {
   padding: 80px;
   margin: 50px;
@@ -370,6 +485,8 @@ label {
   font-family: 'Dancing Script', cursive;
   font-size: 30pt;
 }
+
+/****************** Format title for each page******************/
 .title {
   text-align: center;
   line-height: 30px;
@@ -392,17 +509,19 @@ label {
   transform: translateX(-50%);
 }
 .title_page {
-  margin-top: 1px;
-  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   font-family: 'Dancing Script', cursive;
-  font-size: 30pt;
+  font-size: 25pt;
   font-weight: bold;
   color: green;
-  background-color: honeydew;
   font-style: normal;
 }
 .col4 h4 {
+  display: block;
   margin-top: 15px;
+  margin-left: 20px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13pt;
@@ -412,6 +531,7 @@ label {
 }
 .col4 p {
   font-size: 14px;
+  margin-left: 20px;
 }
 .rating .fa {
   color: orangered;
@@ -428,10 +548,13 @@ label {
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
-  transition: transform 0.5s;
 }
-.col4 img {
+.col4 figure {
   width: 100%;
+}
+
+.col4 .rating {
+  margin-left: 20px;
 }
 .title_center {
   margin: 0 auto 80px;
@@ -440,8 +563,8 @@ label {
   max-width: 700px;
   background: #ffffff;
   position: relative;
-  /* box-shadow: 2px 4px 5px 0 rgba(0, 50, 2, 0.5); */
 }
+
 .page-btn {
   margin: 0 auto 80px;
 }
@@ -478,19 +601,22 @@ label {
   right: -10px;
   z-index: -1;
 }
-.small-container .row .col4 .old {
+
+/****************** Format price for each items ******************/
+.old {
   text-decoration: line-through;
 }
-.small-container .row .col4 .new {
+.new {
   color: rgba(0, 0, 0, 0.842);
   font-weight: bold;
 }
 
+/****************** Format offer part ******************/
 .offer {
   background: radial-gradient(#fff, #d6ffd8);
-  margin-top: 60px;
-  margin-bottom: 90px;
-  padding: 30px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 18px 0;
 }
 .offer .small-container .row .co2 {
   background: radial-gradient(#fff, #deffd6);
@@ -522,6 +648,7 @@ label {
   width: 100%;
 }
 
+/****************** Format small-container div ******************/
 .small-container {
   max-width: 1080px;
   margin: auto;
@@ -570,27 +697,92 @@ label {
   float: right;
 }
 
-.menu-bar ul {
-  display: inline-flex;
-  float: right;
-}
-.menu-bar ul li {
-  border-left: 1px solid #ffffff;
-  list-style-type: none;
-  padding: 10px;
-  cursor: pointer;
+/****************** Format note for each category ******************/
+.benefit {
+  color: #555;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  font-style: italic;
+  font-size: 15pt;
+  line-height: 30pt;
   text-align: center;
 }
-.menu-bar ul li a {
-  font-size: 16px;
-  font-weight: bold;
-  color: green;
-  text-decoration: none;
+
+/* Setting to pop up and close image */
+figure {
+  float: left;
+  margin: 1em 2em 0 0;
+  height: 280px;
 }
-.fa-shopping-cart {
-  margin-right: 5px;
+
+figure img {
+  padding: 10px;
+  border: 1px solid pink;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
 }
-@media only screen and (max-width: 980px) {
+
+figure figcaption {
+  width: 200px;
+  font-size: 0.7em;
+  padding: 5px;
+  margin-left: -1000em;
+  margin-top: -20px;
+  background-color: #ffa;
+  border: 1px solid #ffad33;
+  border-radius: 5px;
+  position: relative;
+}
+
+figure:hover figcaption {
+  margin-left: 50px;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  cursor: default;
+  z-index: 1000;
+}
+
+#popup .image {
+  max-width: 1000px;
+}
+
+#popup .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1001;
+  font: bold 24px arial, sans-serif;
+  color: white;
+  background-color: darkred;
+  padding: 2px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: pointer;
+}
+
+#popupbg {
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+/************** Set a responsive website ***********/
+@media only screen and (max-width: 880px) {
   .container {
     height: 100px;
     border-bottom: 0;
@@ -600,7 +792,7 @@ label {
     width: 100%;
   }
   .search-container {
-    width: 100%;
+    width: 90%;
   }
 
   .menu-bar ul {
@@ -618,12 +810,7 @@ label {
     width: 30%;
     margin: 10px 0px;
   }
-  /* 
-  nav {
-    margin: 60px;
-    height: 80px;
-    width: 90%;
-  } */
+
   .container .bar nav ul {
     width: 45%;
     position: absolute;
@@ -673,17 +860,56 @@ label {
     cursor: pointer;
   }
   #foot_ {
-    margin-left: 0px;
+    margin-left: -20px;
     width: 80%;
   }
   footer section {
     width: 100%;
-    height: 880px;
+    height: 900px;
     margin: auto;
   }
   footer section.format_foot {
     height: 70px;
     width: 100%;
+  }
+  #subscribe {
+    position: absolute;
+    font-weight: bold;
+    margin-left: -10px;
+    text-align: left;
+    font-style: italic;
+    width: 100%;
+  }
+
+  #subscribe input[type='email'] {
+    margin-left: 0px;
+    width: 55%;
+  }
+  .form {
+    margin: 0 auto;
+    padding: 1.5em;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  .form input {
+    padding: 10px;
+    font-size: inherit;
+  }
+
+  .form input[type='text'],
+  .form input[type='password'],
+  .form input[type='email'],
+  .form input[type='tel'] {
+    display: inline-block;
+    margin-bottom: 35px;
+    margin-left: 5%;
+    width: 60%;
+    border: 1px solid darkgreen;
+  }
+  .form input[type='radio']:first-child {
+    margin-left: -0.5em;
+    font-size: 15pt;
   }
   @media only screen and (max-width: 600px) {
     .row {

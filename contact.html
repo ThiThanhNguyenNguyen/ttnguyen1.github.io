@@ -16,14 +16,6 @@ Assignment  : Final -->
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&family=Lobster+Two:ital@1&family=Volkhov&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
@@ -75,22 +67,20 @@ Assignment  : Final -->
         <nav>
           <ul id="MenuItems">
             <li><a href="index.html" id="menu_1">Home</a></li>
-            <li><a href="#" id="menu_2">Promotion</a></li>
+            <li><a href="index.html" id="menu_2">Promotion</a></li>
             <li>
-              <a href="#" id="menu_3">Best Seller</a>
+              <a href="index.html" id="menu_3">Best Seller</a>
             </li>
-
             <li>
-              <a href="#" id="menu_4">Products</a>
+              <a href="index.html">Products</a>
               <ul>
-                <li><a href="#" id="menu_41">Herbal Tea</a></li>
-                <li><a href="#" id="menu_42">Green Tea</a></li>
-                <li><a href="#" id="menu_43">Black Tea </a></li>
+                <li><a href="index.html">Herbal Tea</a></li>
+                <li><a href="index.html">Green Tea</a></li>
+                <li><a href="index.html">Black Tea </a></li>
               </ul>
             </li>
-
             <li>
-              <a href="service.html" id="menu_7">Company</a>
+              <a href="service.html">Company</a>
               <ul>
                 <li><a href="service.html">About us</a></li>
                 <li><a href="service.html">Location & hour</a></li>
@@ -100,7 +90,7 @@ Assignment  : Final -->
                 <li><a href="service.html">FAQ </a></li>
               </ul>
             </li>
-            <li><a href="contact.html" id="menu_8">Contact</a></li>
+            <li><a href="form.html" id="menu_8">Account</a></li>
             <li>
               <div class="search-container">
                 <input
@@ -117,76 +107,117 @@ Assignment  : Final -->
       </div>
       <div class="clear"></div>
 
-      <!--Add a hot exclusive product-->
-      <div class="offer" id="offer1">
-        <div class="small-container">
-          <div class="row">
-            <div class="col2">
-              <img src="images/hoa-cuc-kho.jpg" alt="" class="offer-img" width="200" height="290" />
-            </div>
-            <div class="col2">
-              <p>Exclusively Available on N & Tea</p>
-              <h1>Extremely good Tea</h1>
-              <small
-                >Bring yourself to a relaxing sleep with our special blend of Chrysanthemum
-                tea.</small
+      <!--Add a form-->
+      <div id="form1">
+        <h1>Contact Form</h1>
+        <h4 class="note">
+          Please kindly fill all required fields.
+        </h4>
+        <fieldset>
+          <form
+            name="main_form"
+            class="form"
+            action="https://httpbin.org/post"
+            method="POST"
+            onsubmit="return validate();"
+          >
+            <label for="fullName"><span id="highlight"> *</span> Name:</label>
+            <input
+              type="text"
+              placeholder="Please enter your name"
+              name="fullName"
+              autofocus
+              required
+              id="fullName"
+              size="20"
+              value=""
+              maxlength="15"
+            />
+
+            <label for="email"><span id="highlight"> *</span> Email:</label>
+            <input
+              type="email"
+              placeholder="Please enter your email"
+              name="email"
+              required="required"
+              id="email"
+            /><br />
+            <label for="phone"><span id="highlight"> *</span> Phone:</label>
+            <input
+              type="tel"
+              placeholder="Please enter your phone number"
+              name="phone"
+              required="required"
+              id="phone"
+              size="20"
+              value=""
+              maxlength="15"
+            /><br />
+            <label for="address"><span id="highlight"> *</span> Address:</label>
+            <input
+              type="text"
+              placeholder="Please enter your address"
+              name="address"
+              id="address"
+              required="required"
+            />
+
+            <label for="postalCode"><span id="highlight"> *</span> Postal Code:</label>
+            <input
+              type="text"
+              placeholder="Please enter postal code"
+              name="postalCode"
+              id="postalCode"
+              required="required"
+            />
+            <label for="cities"><span id="highlight"> *</span> City:</label>
+            <input
+              required="required"
+              type="text"
+              placeholder="Please select your city here"
+              list="cities-list"
+              id="cities"
+              name="city"
+            />
+            <datalist id="cities-list">
+              <option value="Toronto"> </option>
+              <option value="Quebec"> </option>
+              <option value="Vancouver"> </option>
+              <option value="Calgary"> </option>
+              <option value="Ottawa"> </option>
+              <option value="St.John's"> </option>
+              <option value="Charlottetown"> </option>
+              <option value="Saskatoon"> </option>
+              <option value="Whitehorse"> </option>
+              <option value="Halifax"> </option>
+              <option value="Banff"> </option>
+              <option value="London"> </option>
+            </datalist>
+            <br />
+            <div>
+              <input type="radio" id="question" name="option" onclick="hideBox()" /><label
+                for="question"
+                >Question</label
+              >
+              <input type="radio" id="comment" name="option" onclick="hideBox()" /><label
+                for="comment"
+                >Comment
+              </label>
+              <input type="radio" id="problem" name="option" onclick="displayBox()" /><label
+                for="problem"
+                id="special"
+                >Order Problem</label
               >
               <br />
-              <a href="herbal.html" class="btn">Buy now &#8594;</a>
+              <textarea name="box" id="format_box"></textarea><br />
             </div>
-          </div>
-        </div>
-      </div>
 
-      <!--Adding two div elements on the page for showing up full-size images-->
-      <div id="popup">
-        <img id="popupImage" src="nothing.jpg" alt="Loading..." class="image" />
-        <div class="close" onclick="imageClose();">&nbsp;X&nbsp;</div>
-      </div>
-      <div id="popupbg"></div>
+            <div id="errors"></div>
 
-      <!--Add a div element which display all products and filter products-->
-      <div id="group"></div>
-
-      <!--Add an extremely exclusive product-->
-      <div class="offer">
-        <div class="small-container">
-          <div class="row">
-            <div class="col2">
-              <img src="images/turkey-tea.jpg" alt="" class="offer-img" width="350" height="250" />
-            </div>
-            <div class="col2">
-              <p>Exclusively Available on N & Tea</p>
-              <h1>Peppermint and Lemon Tea</h1>
-              <small>Bring yourself to a relaxing life.</small>
-              <br />
-              <a href="herbal.html" class="btn">Buy now &#8594;</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--Add nice cups of tea image to attract customers-->
-      <div class="categories">
-        <div class="small-container">
-          <div class="row">
-            <div class="col3">
-              <img src="images/ly-herbal.jpg" alt="" width="140" height="220" />
-              <button type="button" class="btn-buy">Buy now</button>
-              <div class="overlay"></div>
-            </div>
-            <div class="col3">
-              <img src="images/ly-tra-cuc.jpg" alt="" width="140" height="220" />
-              <button type="button" class="btn-buy">Buy now</button>
-              <div class="overlay"></div>
-            </div>
-            <div class="col3">
-              <img src="images/tea-background.jpg" alt="" width="140" height="220" />
-              <button type="button" class="btn-buy">Buy now</button>
-              <div class="overlay"></div>
-            </div>
-          </div>
-        </div>
+            <button type="reset" name="clear" onclick="clearErrors();">Clear</button>
+            <button type="submit" name="submit" value="Submit Information">Submit</button>
+          </form>
+        </fieldset>
       </div>
 
       <!--Add brand of parties to show payment methods-->
@@ -220,23 +251,22 @@ Assignment  : Final -->
           <aside>
             <p><b>SERVICE</b></p>
             <p class="add"><a href="service.html" class="link_">Shipping</a></p>
-            <p class="add"><a href="service.html" class="link_">Return</a></p>
+            <p class="add"><a href="service.html" class="link_">Return Policy</a></p>
             <p class="add"><a href="service.html" class="link_">FAQ</a></p>
-            <p class="add"><a href="contact.html" class="link_">Contact</a></p>
+            <p class="add"><a href="contact.html" class="link_">Account</a></p>
           </aside>
 
           <aside class="space">
             <p><b>SHOP</b></p>
-            <p class="add"><a href="#" id="menu_f1" class="link_">Promotion </a></p>
-            <p class="add"><a href="#" id="menu_f2" class="link_">Best Seller </a></p>
-            <p class="add"><a href="#" id="menu_f3" class="link_">Herbal Tea </a></p>
-            <p class="add"><a href="#" id="menu_f4" class="link_">Green Tea </a></p>
-            <p class="add"><a href="#" id="menu_f5" class="link_">Black Tea </a></p>
+            <p class="add"><a href="index.html" class="link_">Promotion</a></p>
+            <p class="add"><a href="index.html" class="link_">Best Seller</a></p>
+            <p class="add"><a href="index.html" class="link_">Black Tea</a></p>
+            <p class="add"><a href="index.html" class="link_"> Green Tea</a></p>
+            <p class="add"><a href="index.html" class="link_">Herbal Tea</a></p>
           </aside>
 
           <aside>
             <p><b>FOLLOW US</b></p>
-
             <p class="add">
               <i class="fa fa-phone" id="icon1"></i>
               <a href="tel:416-254-6770" class="link_">416-254-6770</a>
@@ -307,20 +337,6 @@ Assignment  : Final -->
         } else {
           MenuItems.style.maxHeight = '0px';
         }
-      }
-    </script>
-
-    <!--Script for pop up and close image-->
-    <script>
-      function imageView(bigImage) {
-        document.querySelector('#popupImage').setAttribute('src', bigImage);
-        document.querySelector('#popup').style.display = 'block';
-        document.querySelector('#popupbg').style.visibility = 'visible';
-      }
-
-      function imageClose() {
-        document.querySelector('#popup').style.display = 'none';
-        document.querySelector('#popupbg').style.visibility = 'hidden';
       }
     </script>
   </body>

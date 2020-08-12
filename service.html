@@ -1,3 +1,9 @@
+<!-- 
+Student Name: Thi Thanh Nguyen Nguyen
+Student ID  : 144128188
+Course      : WEB222NEE
+Assignment  : Final -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,56 +35,63 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </head>
+
   <body>
+    <!--Add logo and quick icons-->
     <div class="container">
       <a href="index.html" class="link_">
-        <img class="logo" src="images/lotus_n.jpg" height="55px" width="35px" />
-        <img class="name" src="images/logo_n.jpg" height="65px" width="160px" />
+        <img class="logo" src="images/lotus_n.jpg" alt="" height="55" width="35" />
+        <img class="name" src="images/logo_n.jpg" alt="" height="65" width="160" />
       </a>
 
       <div class="menu-bar">
         <ul>
           <li>
-            <img src="images/menu.png" id="menu-icon" onclick="show_menu()" />
+            <img src="images/menu.jpg" alt="" id="menu-icon" onclick="show_menu()" />
           </li>
           <li>
             <a href="#"> <i class="fa fa-shopping-cart"></i>Cart</a>
           </li>
           <li>
-            <a href="form.html">Sign up</a>
+            <a href="#foot_form">Subscribe</a>
           </li>
           <li>
-            <a href="form.html">Sign in</a>
+            <a href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
 
+      <!--Add navigation bar-->
       <div class="bar">
         <nav>
           <ul id="MenuItems">
             <li><a href="index.html" id="menu_1">Home</a></li>
-            <li><a href="promo.html" id="menu_2">Promotion</a></li>
+            <li><a href="index.html" id="menu_2">Promotion</a></li>
             <li>
-              <a href="best.html" id="menu_3">Best Seller</a>
+              <a href="index.html" id="menu_3">Best Seller</a>
             </li>
+
             <li>
-              <a href="herbal.html" id="menu_4">Herbal Tea</a>
-            </li>
-            <li>
-              <a href="green.html" id="menu_5">Green Tea</a>
-            </li>
-            <li>
-              <a href="black.html" id="menu_6">Black Tea</a>
-            </li>
-            <li>
-              <a href="service.html" id="menu_7">Service</a>
+              <a href="index.html" id="menu_4">Products</a>
               <ul>
-                <li><a href="service.html" id="menu_71">Shipping</a></li>
-                <li><a href="service.html" id="menu_72">Return Policy</a></li>
-                <li><a href="service.html" id="menu_73">FAQ </a></li>
+                <li><a href="index.html" id="pro1">Herbal Tea</a></li>
+                <li><a href="index.html" id="pro2">Green Tea</a></li>
+                <li><a href="index.html" id="pro3">Black Tea </a></li>
               </ul>
             </li>
-            <li><a href="form.html" id="menu_8">Account</a></li>
+
+            <li>
+              <a href="service.html">Company</a>
+              <ul>
+                <li><a href="#part1">About us</a></li>
+                <li><a href="#part2">Location & hour</a></li>
+                <li><a href="#part3">FAQ </a></li>
+                <li><a href="#part4">Shipping</a></li>
+                <li><a href="#part5">Return</a></li>
+                <li><a href="#part6">FAQ </a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html" id="menu_8">Contact</a></li>
             <li>
               <div class="search-container">
                 <input
@@ -95,7 +108,8 @@
       </div>
       <div class="clear"></div>
 
-      <h3 class="service">About us</h3>
+      <!--Add content of the Service Page-->
+      <h3 class="service" id="part1">About us</h3>
       <p>
         We believe that tea has an ability to build a healthier and more altruistic life. Through
         enjoying a cup of tea, we are more mindful of the present moment, and be more grateful of
@@ -105,10 +119,14 @@
         bringing to you only the best. More than that, we also design great gift ideas and packaging
         to help you to connect with your loved ones.
       </p>
+      <br />
+      <hr />
+      <h3 class="service" id="part2">Location & hour</h3>
       <p>Our head office is 2200 Sheppard East Scarborough, Ontario, J2J K9K, Canada</p>
       <p>Our customer service hours of operation are 9h00 to 17h00.</p>
-
-      <h3 class="service">Careers</h3>
+      <br />
+      <hr />
+      <h3 class="service" id="part3">Careers</h3>
       <p>
         <b>Store Manager</b>
       </p>
@@ -118,7 +136,6 @@
         our warehouse. It is a fast-paced, fun and you will lead a great team within the store. You
         will also have the benefit and support of your colleagues across our network.
       </p>
-
       <p>
         <b>Web developer</b>
       </p>
@@ -127,24 +144,26 @@
         with a variety of our marketing and development efforts, including rebuilding our existing
         sites, setting up our mobile app and more!
       </p>
-
       <br />
       <hr />
-      <h3 class="service">Shipping</h3>
+      <h3 class="service" id="part4">Shipping</h3>
       <p>
         We offer free standard shipping within Canada for orders of $50 or more and a flat fee of
         $9.75 for orders less than $50. Please allow at least 2 business days for your order to be
         processed. We do not process order on Canadian Statutory holidays or weekend.
       </p>
-      <h3 class="service">Return Policy</h3>
+      <br />
+      <hr />
+      <h3 class="service" id="part5">Return Policy</h3>
       <p>
         We hope you like shopping at N& tea. Not satisfied with your latest purchase? We will gladly
         accept your return or exchange request for unused items within 30 days of the original
         receipt. We offer full refunds and exchanges on unused tea accessories, and in-store
         exchange or store credit on unused loose-leaf tea, food or sweeteners.
       </p>
-
-      <h3 class="service">FAQ</h3>
+      <br />
+      <hr />
+      <h3 class="service" id="part6">FAQ</h3>
       <p>
         <b>Can I cancel or modify my order?</b>
       </p>
@@ -161,49 +180,56 @@
         You can call us at 416-254-6770 or email us at ntea@gmail.com. Our customer service hours of
         operation are 9h00 to 17h00.
       </p>
+      <br />
+      <hr />
 
+      <!--Add brand of parties to show payment methods-->
       <div class="brand-tea">
         <div class="small-container">
           <div class="row">
             <div class="col5">
-              <img src="images/visa.jpg" width="190px" height="110px" />
+              <img src="images/visa.jpg" alt="" width="190" height="110" />
             </div>
             <div class="col5">
-              <img src="images/master.png" width="150px" height="110px" />
+              <img src="images/master.jpg" alt="" width="150" height="110" />
             </div>
             <div class="col5">
-              <img src="images/paypal.png" width="150px" height="90px" />
+              <img src="images/paypal.jpg" alt="" width="150" height="90" />
             </div>
           </div>
         </div>
       </div>
+
+      <!--Footer section-->
       <footer>
         <section>
+          <h6>This is a section</h6>
           <aside>
             <p><b>COMPANY</b></p>
-            <p class="add"><a href="service.html" class="link_">About us</a></p>
-            <p class="add"><a href="service.html" class="link_">Location & hour</a></p>
-            <p class="add"><a href="service.html" class="link_">Careers</a></p>
+            <p class="add"><a href="#part1" class="link_">About us</a></p>
+            <p class="add"><a href="#part2" class="link_">Location & hour</a></p>
+            <p class="add"><a href="#part3" class="link_">Careers</a></p>
           </aside>
 
           <aside>
-            <p><b>CUSTOMER SERVICE</b></p>
-            <p class="add"><a href="service.html" class="link_">Shipping</a></p>
-            <p class="add"><a href="service.html" class="link_"> Return Policy</a></p>
-            <p class="add"><a href="service.html" class="link_">FAQ</a></p>
+            <p><b>SERVICE</b></p>
+            <p class="add"><a href="#part4" class="link_">Shipping</a></p>
+            <p class="add"><a href="#part5" class="link_"> Return</a></p>
+            <p class="add"><a href="#part6" class="link_">FAQ</a></p>
+            <p class="add"><a href="contact.html" class="link_">Contact</a></p>
           </aside>
 
           <aside class="space">
             <p><b>SHOP</b></p>
-            <p class="add"><a href="promo.html" class="link_">Promotion</a></p>
-            <p class="add"><a href="best.html" class="link_">Best Seller</a></p>
-            <p class="add"><a href="black.html" class="link_">Black Tea</a></p>
-            <p class="add"><a href="green.html" class="link_"> Green Tea</a></p>
-            <p class="add"><a href="herbal.html" class="link_">Herbal Tea</a></p>
+            <p class="add"><a href="#" class="link_">Promotion </a></p>
+            <p class="add"><a href="#" class="link_">Best Seller </a></p>
+            <p class="add"><a href="#" class="link_">Herbal Tea </a></p>
+            <p class="add"><a href="#" class="link_">Green Tea </a></p>
+            <p class="add"><a href="#" class="link_">Black Tea </a></p>
           </aside>
 
           <aside>
-            <p><b>CONTACT US</b></p>
+            <p><b>FOLLOW US</b></p>
 
             <p class="add">
               <i class="fa fa-phone" id="icon1"></i>
@@ -225,15 +251,47 @@
               <i class="fa fa-instagram" aria-hidden="true"></i>
               &nbsp;
               <i class="fa fa-twitter" aria-hidden="true"></i>
+              &nbsp;
+              <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
             </p>
           </aside>
         </section>
+
+        <!--Add a subscribe box-->
         <section class="format_foot">
-          <p id="foot_"></p>
+          <h6>This is a section</h6>
+          <form
+            id="foot_form"
+            action="https://formspree.io/mknqebdy"
+            method="post"
+            name="email_subscribe"
+          >
+            <p id="subscribe">
+              Enter your email and subscribe now for our newsletter
+              <input
+                type="email"
+                placeholder="enter your e-mail address"
+                name="email_full"
+                required="required"
+                id="email_1"
+              />
+              <input type="submit" name="subscribe" value="SUBSCRIBE" id="validate_email" />
+            </p>
+          </form>
+        </section>
+
+        <!--Add copyright-->
+        <section class="format_foot">
+          <h6>This is a section</h6>
+          <p id="foot_">
+            &copy; 2020, N & Tea. All rights reserved. Developed by Thi Thanh Nguyen Nguyen.
+          </p>
         </section>
       </footer>
     </div>
     <br />
+
+    <!--Script for make navigate bar responsive-->
     <script>
       var MenuItems = document.getElementById('MenuItems');
       MenuItems.style.maxHeight = '0px';
