@@ -794,7 +794,6 @@ figure:hover figcaption {
   .search-container {
     width: 90%;
   }
-
   .menu-bar ul {
     margin: 0px;
     width: 90%;
@@ -810,7 +809,6 @@ figure:hover figcaption {
     width: 30%;
     margin: 10px 0px;
   }
-
   .container .bar nav ul {
     width: 45%;
     position: absolute;
@@ -858,6 +856,10 @@ figure:hover figcaption {
   #menu-icon {
     display: block;
     cursor: pointer;
+  }
+  #format_box {
+    width: 22em;
+    height: 12em;
   }
   #foot_ {
     margin-left: -20px;
@@ -908,8 +910,8 @@ figure:hover figcaption {
     border: 1px solid darkgreen;
   }
   .form input[type='radio']:first-child {
-    margin-left: -0.5em;
-    font-size: 15pt;
+    margin-left: -0.9em;
+    font-size: 13pt;
   }
   @media only screen and (max-width: 600px) {
     .row {

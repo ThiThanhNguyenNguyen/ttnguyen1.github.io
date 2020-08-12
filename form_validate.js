@@ -53,9 +53,13 @@ function validate_name() {
   }
 
   var countNonAlpha = 0;
+
   stringName = stringName.toUpperCase();
   for (var i = 0; i < stringLength; i++) {
-    if (!(stringName.charCodeAt(i) > 64 && stringName.charCodeAt(i) < 91)) {
+    if (
+      (stringName.charCodeAt(i) < 65 || stringName.charCodeAt(i) > 90) &&
+      stringName.charCodeAt(i) !== 32
+    ) {
       countNonAlpha++;
       break;
     }
