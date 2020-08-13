@@ -205,10 +205,13 @@ Assignment  : Final -->
 
             <!-- Add check box for client to click -->
             <div>
-              <input type="radio" id="question" name="option" onclick="hideBox()" /><label
-                for="question"
-                >Question</label
-              >
+              <input
+                type="radio"
+                id="question"
+                name="option"
+                onclick="hideBox()"
+                required="required"
+              /><label for="question">Question</label>
               <input type="radio" id="comment" name="option" onclick="hideBox()" /><label
                 for="comment"
                 >Comment
@@ -231,6 +234,7 @@ Assignment  : Final -->
                 name="box_fix"
                 id="format_large_box"
                 placeholder="Enter comment here"
+                required="required"
               ></textarea
               ><br />
             </div>
