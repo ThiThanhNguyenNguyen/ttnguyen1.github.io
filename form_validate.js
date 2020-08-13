@@ -6,39 +6,16 @@ Assignment  : Final
  */
 
 //Main validate function
-window.onload = function() {
-  function validate() {
-    return (
-      validate_name() &&
-      validate_phone() &&
-      validate_add() &&
-      checkForm() &&
-      validate_com_box() &&
-      validate_order_no_box()
-    );
-  }
-
-  //Fix error
-  var error_check = 0;
-  if (error_check < 1) {
-    displayBox();
-    validate();
-    clearErrors();
-  }
-};
-// function to hide comment box when "Question" or Comment is clicked
-function hideBox() {
-  var box_ = document.querySelector('#format_box');
-  box_.disabled = true;
-  box_.classList.remove('show_box');
-}
-
-// function to display comment box when "Order Problem" is clicked
-function displayBox() {
-  var box_ = document.querySelector('#format_box');
-  box_.required = true;
-  box_.disabled = false;
-  box_.classList.add('show_box');
+function validate() {
+  clearErrors();
+  return (
+    validate_name() &&
+    validate_phone() &&
+    validate_add() &&
+    checkForm() &&
+    validate_com_box() &&
+    validate_order_no_box()
+  );
 }
 
 //Function to validate name
@@ -116,6 +93,7 @@ function validate_phone() {
           messageRules +
           '</p>'
       );
+      document.querySelector('#phone').focus();
       return false;
     }
   }
@@ -212,6 +190,7 @@ function validate_com_box() {
         nameMessageRules +
         '</p>'
     );
+    document.querySelector('#format_large_box').focus();
     return false;
   }
 
@@ -234,6 +213,7 @@ function validate_com_box() {
         nameMessageRules +
         '</p>'
     );
+    document.querySelector('#format_large_box').focus();
     return false;
   }
   return true;
@@ -249,4 +229,23 @@ function clearErrors() {
 //Function to show error messages
 function showErrors(messages) {
   document.querySelector('#errors').innerHTML += messages;
+}
+//Fix error
+var error_check = 0;
+if (error_check < 1) {
+  displayBox();
+  validate();
+  clearErrors();
+}
+
+// function to hide comment box when "Question" or Comment is clicked
+function hideBox() {
+  var box_ = document.querySelector('#format_box');
+  box_.classList.remove('show_box');
+}
+
+// function to display comment box when "Order Problem" is clicked
+function displayBox() {
+  var box_ = document.querySelector('#format_box');
+  box_.classList.add('show_box');
 }
