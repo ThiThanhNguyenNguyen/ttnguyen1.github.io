@@ -6,17 +6,26 @@ Assignment  : Final
  */
 
 //Main validate function
-function validate() {
-  return (
-    validate_name() &&
-    validate_phone() &&
-    validate_add() &&
-    checkForm() &&
-    validate_com_box() &&
-    validate_order_no_box()
-  );
-}
+window.onload = function() {
+  function validate() {
+    return (
+      validate_name() &&
+      validate_phone() &&
+      validate_add() &&
+      checkForm() &&
+      validate_com_box() &&
+      validate_order_no_box()
+    );
+  }
 
+  //Fix error
+  var error_check = 0;
+  if (error_check < 1) {
+    displayBox();
+    validate();
+    clearErrors();
+  }
+};
 // function to hide comment box when "Question" or Comment is clicked
 function hideBox() {
   var box_ = document.querySelector('#format_box');
@@ -240,12 +249,4 @@ function clearErrors() {
 //Function to show error messages
 function showErrors(messages) {
   document.querySelector('#errors').innerHTML += messages;
-}
-
-//Fix error
-var error_check = 0;
-if (error_check < 1) {
-  clearErrors();
-  displayBox();
-  validate();
 }
