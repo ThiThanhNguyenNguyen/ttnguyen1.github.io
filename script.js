@@ -2,7 +2,7 @@
 Student Name: Thi Thanh Nguyen Nguyen
 Student ID  : 144128188
 Course      : WEB222NEE
-Assignment  : 5 
+Assignment  : Final
  */
 
 //Declare variable to store images
@@ -318,13 +318,6 @@ var teas_list = [
 window.onload = function() {
   document.title = 'NguyenTea Website';
 
-  // document.querySelector('#subscribe').innerHTML =
-  //   'Please enter your email and subscribe now for our newsletter';
-
-  // document.querySelector('#foot_').innerHTML =
-  //   '&copy; 2020, N & Tea. All rights reserved. Developed by Thi Thanh Nguyen Nguyen.';
-
-  //Call function to show all items
   generate();
 
   // Set event when "promotion" tab is clicked

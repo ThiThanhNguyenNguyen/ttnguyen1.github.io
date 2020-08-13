@@ -33,8 +33,6 @@ Assignment  : Final -->
     />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    <script src="form_validate.js"></script>
   </head>
 
   <body>
@@ -121,7 +119,8 @@ Assignment  : Final -->
             method="POST"
             onsubmit="return validate();"
           >
-            <label for="fullName"><span id="highlight"> *</span> Name:</label>
+            <!-- Add an input to enter full name -->
+            <label for="fullName"><span class="highlight"> *</span> Name:</label>
             <input
               type="text"
               placeholder="Please enter your name"
@@ -134,7 +133,8 @@ Assignment  : Final -->
               maxlength="15"
             />
 
-            <label for="email"><span id="highlight"> *</span> Email:</label>
+            <!-- Add an input to enter Email -->
+            <label for="email"><span class="highlight"> *</span> Email:</label>
             <input
               type="email"
               placeholder="Please enter your email"
@@ -142,7 +142,9 @@ Assignment  : Final -->
               required="required"
               id="email"
             /><br />
-            <label for="phone"><span id="highlight"> *</span> Phone:</label>
+
+            <!-- Add an input to enter Phone number -->
+            <label for="phone"><span class="highlight"> *</span> Phone:</label>
             <input
               type="tel"
               placeholder="Please enter your phone number"
@@ -153,7 +155,9 @@ Assignment  : Final -->
               value=""
               maxlength="15"
             /><br />
-            <label for="address"><span id="highlight"> *</span> Address:</label>
+
+            <!-- Add an input to enter Address -->
+            <label for="address"><span class="highlight"> *</span> Address:</label>
             <input
               type="text"
               placeholder="Please enter your address"
@@ -162,15 +166,19 @@ Assignment  : Final -->
               required="required"
             />
 
-            <label for="postalCode"><span id="highlight"> *</span> Postal Code:</label>
+            <!-- Add an input to enter Postal Code -->
+            <label for="postalCode"><span class="highlight"> *</span> Postal Code:</label>
             <input
               type="text"
               placeholder="Please enter postal code"
               name="postalCode"
               id="postalCode"
               required="required"
+              pattern="^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy][0-9][ABCEGHJKLMNPRSTVWXYZabceghjklmnprstvwxyz][ ]*[0-9][ABCEGHJKLMNPRSTVWXYZabceghjklmnprtvwxyz][0-9]$"
             />
-            <label for="cities"><span id="highlight"> *</span> City:</label>
+
+            <!-- Add list of common Canadian cities -->
+            <label for="cities"><span class="highlight"> *</span> City:</label>
             <input
               required="required"
               type="text"
@@ -185,15 +193,17 @@ Assignment  : Final -->
               <option value="Vancouver"> </option>
               <option value="Calgary"> </option>
               <option value="Ottawa"> </option>
-              <option value="St.John's"> </option>
+              <option value="Montreal"> </option>
               <option value="Charlottetown"> </option>
               <option value="Saskatoon"> </option>
               <option value="Whitehorse"> </option>
+              <option value="Victoria"> </option>
               <option value="Halifax"> </option>
-              <option value="Banff"> </option>
               <option value="London"> </option>
             </datalist>
             <br />
+
+            <!-- Add check box for client to click -->
             <div>
               <input type="radio" id="question" name="option" onclick="hideBox()" /><label
                 for="question"
@@ -208,12 +218,27 @@ Assignment  : Final -->
                 id="special"
                 >Order Problem</label
               >
+              <!-- Add an input to enter order number -->
+              <input name="box" id="format_box" placeholder="Enter order number" />
               <br />
-              <textarea name="box" id="format_box"></textarea><br />
+
+              <!-- Add A hidden input field with my name -->
+              <input name="studentName" value="Thi Thanh Nguyen Nguyen" type="hidden" />
+              <br />
+
+              <!-- Add a text box as textarea -->
+              <textarea
+                name="box_fix"
+                id="format_large_box"
+                placeholder="Enter comment here"
+              ></textarea
+              ><br />
             </div>
 
+            <!-- Add a div to display error messages -->
             <div id="errors"></div>
 
+            <!-- Add two buttons to submit or clear information-->
             <button type="reset" name="clear" onclick="clearErrors();">Clear</button>
             <button type="submit" name="submit" value="Submit Information">Submit</button>
           </form>
@@ -339,5 +364,6 @@ Assignment  : Final -->
         }
       }
     </script>
+    <script src="form_validate.js"></script>
   </body>
 </html>

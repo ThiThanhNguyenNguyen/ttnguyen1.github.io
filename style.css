@@ -225,7 +225,7 @@ select {
 select:focus {
   outline: none;
 }
-#highlight {
+.highlight {
   color: red;
   font-weight: bolder;
   margin-left: -10px;
@@ -251,18 +251,29 @@ select:focus {
   cursor: pointer;
 }
 
-.show_box {
-  position: relative;
-  transform: scale(1);
-}
 #format_box {
+  width: 13em;
+  height: 3em;
+  margin-bottom: 10px;
+  border: 1pt darkgreen solid;
+  border-radius: 5px;
+}
+#format_large_box {
   width: 28em;
   height: 12em;
+  border: 1pt darkgreen solid;
+  border-radius: 5px;
 }
-textarea {
+#format_box {
   position: absolute;
   transform: scale(0);
 }
+
+.show_box {
+  position: relative !important;
+  transform: scale(1) !important;
+}
+
 .form {
   margin: 0 auto;
   padding: 1.5em;
@@ -284,6 +295,7 @@ textarea {
   margin-left: 5%;
   width: 70%;
   border: 1px solid darkgreen;
+  border-radius: 5px;
 }
 .form input[type='radio'] {
   margin: 0 7px 2px 1px;
@@ -782,7 +794,7 @@ figure:hover figcaption {
 }
 
 /************** Set a responsive website ***********/
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 780px) {
   .container {
     height: 100px;
     border-bottom: 0;
@@ -858,8 +870,8 @@ figure:hover figcaption {
     cursor: pointer;
   }
   #format_box {
-    width: 22em;
-    height: 12em;
+    width: 10em;
+    height: 3em;
   }
   #foot_ {
     margin-left: -20px;
@@ -898,7 +910,10 @@ figure:hover figcaption {
     padding: 10px;
     font-size: inherit;
   }
-
+  #format_large_box {
+    width: 21em;
+    height: 10em;
+  }
   .form input[type='text'],
   .form input[type='password'],
   .form input[type='email'],
