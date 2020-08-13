@@ -32,6 +32,7 @@ function validate_name() {
         nameMessageRules +
         '</p>'
     );
+    document.main_form.fullName.focus();
     return false;
   }
 
@@ -54,6 +55,7 @@ function validate_name() {
         nameMessageRules +
         '</p>'
     );
+    document.main_form.fullName.focus();
     return false;
   }
   return true;
@@ -74,6 +76,7 @@ function validate_phone() {
         messageRules +
         '</p>'
     );
+    document.main_form.phone.focus();
     return false;
   } else if (str.charAt(3) === '-' && str.charAt(7) === '-' && stringLength === 12) {
     var i,
@@ -93,7 +96,7 @@ function validate_phone() {
           messageRules +
           '</p>'
       );
-      document.querySelector('#phone').focus();
+      document.main_form.phone.focus();
       return false;
     }
   }
@@ -140,6 +143,7 @@ function checkForm() {
     showErrors(
       '<p><mark>Check box</mark><br /> - Missing the check box.<br />' + messageRules + '</p>'
     );
+    document.main_form.option.focus();
     return false;
   }
 
@@ -213,7 +217,7 @@ function validate_com_box() {
         nameMessageRules +
         '</p>'
     );
-    document.querySelector('#format_large_box').focus();
+    document.main_form.box_fix.focus();
     return false;
   }
   return true;
